@@ -1,7 +1,9 @@
 :root {
-  --cal-color: #2c4938;
-  --com-color: #1c2f4a;
-  --stu-color: #C25400;
+  --main-color: #275a3b;
+  --main-offset: #dde0e7;
+  --cal-color: #c1dc89;
+  --com-color: #54575a;
+  --stu-color: var(--main-color);
   --body-background: #8E9BAC;
   --even-color: #e5ebf1;
   --odd-color: #d9e2ec;

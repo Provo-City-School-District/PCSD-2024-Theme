@@ -1,7 +1,7 @@
 #mainHeader {
     background: #dce3e8;
     background: linear-gradient(to bottom,
-            #dce3e8,
+            #4d7f71,
             #f6f9fb 50%,
             #f6f9fb 55%,
             #dbe2e8);
@@ -52,7 +52,7 @@
     background-color: var(--stu-color);
 }
 
-#navbar .employee {
+#navbar .calendar {
     background-color: var(--cal-color);
 }
 
@@ -61,7 +61,7 @@
 }
 
 #navbar .homeLink {
-    background: url(../icons/icons8-home-page-32.png) 0 0 no-repeat var(--body-background);
+    background: url(../icons/icons8-home-page-32.png) 0 0 no-repeat var(--main-color);
     background-position: 1em 50%;
     text-indent: -9999px;
 
