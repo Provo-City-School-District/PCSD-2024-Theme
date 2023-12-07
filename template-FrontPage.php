@@ -95,9 +95,9 @@ $get_to_know_fields = get_fields();
 	<div id="belowSlider">
 		<section id="stayCurrent" class="grid2 calendar">
 			<ul>
-				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-insta.svg" alt="link to Instagram" /></a></li>
-				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-twitter.svg" alt="link to Twitter" /></a></li>
-				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-facebook.svg" alt="link to Facebook" /></a></li>
+				<li><a href=""><?php echo get_svg('socialmedia-insta'); ?></a></li>
+				<li><a href=""><?php echo get_svg('socialmedia-twitter'); ?></a></li>
+				<li><a href=""><?php echo get_svg('socialmedia-facebook'); ?></a></li>
 			</ul>
 			<ul>
 				<li><a href="<?php echo get_field('hero_link_address'); ?>"><?php echo get_field('hero_link_label'); ?></a></li>
@@ -173,15 +173,9 @@ $get_to_know_fields = get_fields();
 
 
 			<ul class="sociallinks">
-				<li>
-					<a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-insta.svg" alt="Link to Instagram" /></span></a>
-				</li>
-				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-twitter.svg" alt="Link to Twitter" /></span>
-					</a>
-				</li>
-				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-facebook.svg" alt="Link to Facebook" /></span>
-					</a>
-				</li>
+				<li><a href=""><?php echo get_svg('socialmedia-insta'); ?></a></li>
+				<li><a href=""><?php echo get_svg('socialmedia-twitter'); ?></a></li>
+				<li><a href=""><?php echo get_svg('socialmedia-facebook'); ?></a></li>
 			</ul>
 
 			<!-- <h2>Instagram Feed</h2>
