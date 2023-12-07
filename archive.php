@@ -47,7 +47,7 @@ get_header();
 				endif;
 	?>
 	</div>
-	<?php get_sidebar('categories'); ?>
+	<?php get_sidebar(); ?>
 </main>
 <?php
 get_footer();

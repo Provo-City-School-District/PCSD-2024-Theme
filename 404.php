@@ -24,7 +24,7 @@ get_header();
 			</script>
 		</div>
 	</section>
-	<?php get_sidebar('categories'); ?>
+	<?php get_sidebar(); ?>
 </main>
 <?php
 get_footer();
