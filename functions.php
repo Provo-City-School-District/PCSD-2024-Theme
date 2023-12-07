@@ -63,6 +63,8 @@ Dashboard Setup
 include_once('includes/PCSD-dashboard-setup.php');
 include_once('includes/pcsd-rss-featured-image.php');
 include_once('includes/PCSD-dependencies.php');
+include_once('includes/PCSD-shortcodes.php');
+include_once('includes/tag-stripper.php');
 
 // Remove type from scripts and styles
 add_filter('style_loader_tag', 'codeless_remove_type_attr', 10, 2);
@@ -173,20 +175,6 @@ function modified_column_register_sortable($columns)
 add_filter('manage_edit-post_sortable_columns', 'modified_column_register_sortable');
 add_filter('manage_edit-page_sortable_columns', 'modified_column_register_sortable');
 
-//[directory url=""]
-
-function directory_func($atts)
-{
-	$category = shortcode_atts(array(
-		'url' => 'something',
-		//'bar' => 'something else',
-	), $atts);
-	$directory_url = "{$category['url']}";
-	// echo '<div class="directoryGrid">';
-	return file_get_contents($directory_url);
-	// echo '</div>';
-}
-add_shortcode('directory', 'directory_func');
 
 /*==========================================================================================
 Add Length Column to the Wordpress Dashboard
