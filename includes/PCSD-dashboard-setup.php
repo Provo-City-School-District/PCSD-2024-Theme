@@ -6,6 +6,13 @@ add_theme_support('post-thumbnails');
 
 // Add Menu Support
 add_theme_support('menus');
+// Wordpress Menus Registration
+register_nav_menus(
+	array(
+		'header-menu' => __('Header Menu'),
+		'frontpage-categories' => __('Front Page Categories')
+	)
+);
 /*==========================================================================================
 removes the welcome panel from the dashboard page since
 most users cant do the things it references anyway
