@@ -34,7 +34,7 @@ h4 a {
   /* clear: both; */
   display: block;
   text-decoration: none;
-  color: #02365b;
+  color: var(--main-color);
 }
 
 h1 {
@@ -55,7 +55,7 @@ a h1,
 a h2,
 a h3,
 a h4 {
-  color: #4f679e;
+  color: var(--link-color);
 }
 
 h1 a:hover,
@@ -66,7 +66,7 @@ a h1:hover,
 a h2:hover,
 a h3:hover,
 a h4:hover {
-  color: #df6d1b;
+  color: var(--hover-color);
   text-decoration: underline;
 }
 .grid3 h2 {
