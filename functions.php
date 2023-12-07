@@ -62,6 +62,7 @@ Dashboard Setup
 ============================================================================================*/
 include_once('includes/PCSD-dashboard-setup.php');
 include_once('includes/pcsd-rss-featured-image.php');
+include_once('includes/PCSD-dependencies.php');
 
 // Remove type from scripts and styles
 add_filter('style_loader_tag', 'codeless_remove_type_attr', 10, 2);
