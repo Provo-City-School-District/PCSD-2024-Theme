@@ -294,9 +294,12 @@ Utility
         margin-top: 128px;
 
     }
-    .admin-bar #mainContent.fullwidth,.admin-bar #mainContent.sidebar {
+    .admin-bar #mainContent.fullwidth {
         margin-top: 90px;
 
+    }
+    .admin-bar #mainContent.sidebar {
+        margin-top: 107px;
     }
     #mainContent.sidebar {
         margin-top: 128px;
