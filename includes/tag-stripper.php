@@ -1,12 +1,5 @@
 <?php 
-/*
-Plugin Name: PCSD Tag Stripper
-Plugin URI: 
-Description: Removes common deprecated and problmatic tags and attributes that the wordpress editor will add automatically. Original Code pulled and from a plugin ericjuden had written. modified by Josh Espinoza
-Author: Josh Espinoza, ericjuden
-Version: 1.6
-Author URI:
-*/
+
 class Target_Stripper {
  	function __construct() {
  	    add_action( 'add_meta_boxes' , array( $this, 'show_filtered_content' ) , 1 , 2 );
