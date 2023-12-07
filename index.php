@@ -4,13 +4,13 @@ get_header();
 <main id="mainContent" class="sidebar">
 	<?php custom_breadcrumbs(); ?>
 	<div id="currentPage">
-		<h1>District News</h1>
+		<h1><?= bloginfo('name') ?> News</h1>
 		<div class="postList">
 			<div class="grid3">
 				<?php
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-				// excluding ID 1012. which is the Board Schedule.
-				$the_query = new WP_Query(array('posts_per_page' => 18, 'category_name'  => array('news', 'sup-with-the-sup'), 'cat' => '-1012', 'post_type'  => array('post', 'podcast'), 'paged'  => $paged));
+				
+				$the_query = new WP_Query(array('posts_per_page' => 18, 'category_name'  => 'news', 'post_type'  => 'post', 'paged'  => $paged));
 				if ($the_query->have_posts()) :
 					while ($the_query->have_posts()) : $the_query->the_post(); ?>
 						<article class="post">
