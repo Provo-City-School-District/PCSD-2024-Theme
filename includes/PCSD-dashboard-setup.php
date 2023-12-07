@@ -14,6 +14,138 @@ register_nav_menus(
 	)
 );
 /*==========================================================================================
+Display Modified Date on Dashboard for Posts
+============================================================================================*/
+// Register Modified Date Column for both posts & pages
+function modified_column_register($columns)
+{
+	$columns['Modified'] = __('Modified Date', 'show_modified_date_in_admin_lists');
+	return $columns;
+}
+add_filter('manage_posts_columns', 'modified_column_register');
+add_filter('manage_pages_columns', 'modified_column_register');
+
+function modified_column_display($column_name, $post_id)
+{
+	switch ($column_name) {
+		case 'Modified':
+			global $post;
+			echo '<p class="mod-date">';
+			echo '<em>' . get_the_modified_date() . ' ' . get_the_modified_time() . '</em><br />';
+			echo '<small>' . esc_html__('by ', 'show_modified_date_in_admin_lists') . '<strong>' . get_the_modified_author() . '<strong></small>';
+			echo '</p>';
+			break; // end all case breaks
+	}
+}
+add_action('manage_posts_custom_column', 'modified_column_display', 10, 2);
+add_action('manage_pages_custom_column', 'modified_column_display', 10, 2);
+
+function modified_column_register_sortable($columns)
+{
+	$columns['Modified'] = 'modified';
+	return $columns;
+}
+add_filter('manage_edit-post_sortable_columns', 'modified_column_register_sortable');
+add_filter('manage_edit-page_sortable_columns', 'modified_column_register_sortable');
+
+
+/*==========================================================================================
+Add Length Column to the Wordpress Dashboard
+============================================================================================*/
+
+//For Posts
+
+//Add the Length column, next to the Title column:
+
+add_filter('manage_post_posts_columns', function ($columns) {
+	$_columns = [];
+
+	foreach ((array) $columns as $key => $label) {
+		$_columns[$key] = $label;
+		if ('title' === $key)
+			$_columns['wpse_post_content_length'] = __('Length');
+	}
+	return $_columns;
+});
+
+//Fill that column with the post content length values:
+
+add_action('manage_post_posts_custom_column', function ($column_name, $post_id) {
+	if ($column_name == 'wpse_post_content_length')
+		echo mb_strlen(get_post($post_id)->post_content);
+}, 10, 2);
+
+//Make our Length column orderable:
+
+add_filter('manage_edit-post_sortable_columns', function ($columns) {
+	$columns['wpse_post_content_length'] = 'wpse_post_content_length';
+	return $columns;
+});
+//Finally we implement the ordering through the posts_orderby filter:
+
+add_filter('posts_orderby', function ($orderby, \WP_Query $q) {
+	$_orderby = $q->get('orderby');
+	$_order   = $q->get('order');
+
+	if (
+		is_admin()
+		&& $q->is_main_query()
+		&& 'wpse_post_content_length' === $_orderby
+		&& in_array(strtolower($_order), ['asc', 'desc'])
+	) {
+		global $wpdb;
+		$orderby = " LENGTH( {$wpdb->posts}.post_content ) " . $_order . " ";
+	}
+	return $orderby;
+}, 10, 2);
+
+//For Pages
+
+//Add the Length column, next to the Title column:
+
+add_filter('manage_page_posts_columns', function ($columns) {
+	$_columns = [];
+
+	foreach ((array) $columns as $key => $label) {
+		$_columns[$key] = $label;
+		if ('title' === $key)
+			$_columns['wpse_post_content_length'] = __('Length');
+	}
+	return $_columns;
+});
+
+//Fill that column with the post content length values:
+
+add_action('manage_page_posts_custom_column', function ($column_name, $post_id) {
+	if ($column_name == 'wpse_post_content_length')
+		echo mb_strlen(get_post($post_id)->post_content);
+}, 10, 2);
+
+//Make our Length column orderable:
+
+add_filter('manage_edit-page_sortable_columns', function ($columns) {
+	$columns['wpse_post_content_length'] = 'wpse_post_content_length';
+	return $columns;
+});
+//Finally we implement the ordering through the posts_orderby filter:
+
+add_filter('posts_orderby', function ($orderby, \WP_Query $q) {
+	$_orderby = $q->get('orderby');
+	$_order   = $q->get('order');
+
+	if (
+		is_admin()
+		&& $q->is_main_query()
+		&& 'wpse_post_content_length' === $_orderby
+		&& in_array(strtolower($_order), ['asc', 'desc'])
+	) {
+		global $wpdb;
+		$orderby = " LENGTH( {$wpdb->posts}.post_content ) " . $_order . " ";
+	}
+	return $orderby;
+}, 10, 2);
+
+/*==========================================================================================
 removes the welcome panel from the dashboard page since
 most users cant do the things it references anyway
 ============================================================================================*/
@@ -139,3 +271,21 @@ function change_paste_as_text($mceInit, $editor_id)
 	return $mceInit;
 }
 add_filter('tiny_mce_before_init', 'change_paste_as_text', 1, 2);
+
+/*==========================================================================================
+removed Wordpress "stuff"
+============================================================================================*/
+// Remove type from scripts and styles
+add_filter('style_loader_tag', 'codeless_remove_type_attr', 10, 2);
+add_filter('script_loader_tag', 'codeless_remove_type_attr', 10, 2);
+function codeless_remove_type_attr($tag, $handle)
+{
+	return preg_replace("/type=['\"]text\/(javascript|css)['\"]/", '', $tag);
+}
+
+
+// REMOVE WP EMOJI
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+remove_action('admin_print_scripts', 'print_emoji_detection_script');
+remove_action('admin_print_styles', 'print_emoji_styles');
