@@ -30,7 +30,7 @@ $get_to_know_fields = get_fields();
 					<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
 				</header>
-			
+
 			</article>
 			<button class="closeAlert"></button>
 		<?php endwhile;
@@ -96,9 +96,9 @@ $get_to_know_fields = get_fields();
 	<div id="belowSlider">
 		<section id="stayCurrent" class="grid2 calendar">
 			<ul>
-				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/dark/socialmedia-insta.svg" alt="link to Instagram" /></a></li>
-				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/dark/socialmedia-twitter.svg" alt="link to Twitter" /></a></li>
-				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/dark/socialmedia-facebook.svg" alt="link to Facebook" /></a></li>
+				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-insta.svg" alt="link to Instagram" /></a></li>
+				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-twitter.svg" alt="link to Twitter" /></a></li>
+				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-facebook.svg" alt="link to Facebook" /></a></li>
 			</ul>
 			<ul>
 				<li><a href="<?php echo get_field('hero_link_address'); ?>"><?php echo get_field('hero_link_label'); ?></a></li>
@@ -166,22 +166,23 @@ $get_to_know_fields = get_fields();
 			</div>
 		</section> <!-- News Home Page End -->
 
-		
+
 		<section id="socialMediaFrontPage">
 			<!-- Start Social Media -->
 			<h1>Social Media</h1>
 			See what's being discussed & shared
-			<script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
-			<link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+			<!-- <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
+			<link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" /> -->
+
 
 			<ul class="sociallinks">
 				<li>
-					<a href="https://www.instagram.com/provocityschooldistrict/"><img src="https://globalassets.provo.edu/image/icons/instagram-social-network-logo-of-photo-camera.svg" alt="Link to Instagram" /></span></a>
+					<a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-insta.svg" alt="Link to Instagram" /></span></a>
 				</li>
-				<li><a href="https://twitter.com/ProvoSchoolDist"><img src="https://globalassets.provo.edu/image/icons/twitter-logo-on-black-background.svg" alt="Link to Twitter" /></span>
+				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-twitter.svg" alt="Link to Twitter" /></span>
 					</a>
 				</li>
-				<li><a href="https://www.facebook.com/provoschooldistrict/"><img src="https://globalassets.provo.edu/image/icons/facebook-app-logo.svg" alt="Link to Facebook" /></span>
+				<li><a href=""><img src="<?php echo get_template_directory_uri() ?>/assets/icons/socialmedia-facebook.svg" alt="Link to Facebook" /></span>
 					</a>
 				</li>
 			</ul>
