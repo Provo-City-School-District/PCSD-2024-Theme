@@ -17,41 +17,6 @@ jQuery(document).ready(function () {
   });
 });
 
-
-
-
-
-//Menu reveal;
-// jQuery("#navbar > a").click(function () {
-//   jQuery("#navbar ul").toggleClass("active");
-//   jQuery(this).html(
-//     jQuery("#navbar ul").hasClass("active")
-//       ? '<img src="https://sandbox.provo.edu:8443//wp-content/themes/pcsdtwentysixteen/assets/icons/dark/exit.png" alt="" /> Exit'
-//       : '<img src="https://sandbox.provo.edu:8443//wp-content/themes/pcsdtwentysixteen/assets/icons/dark/menu.png" alt="" /> Menu'
-//   );
-// });
-
-//window resize event listener. clears mobile menu active
-// jQuery(window).resize(function () {
-//   jQuery("#navbar ul").removeClass("active");
-//   jQuery("#navbar > a").html(
-//     '<img src="https://sandbox.provo.edu:8443//wp-content/themes/pcsdtwentysixteen/assets/icons/dark/menu.png" alt="" /> Menu'
-//   );
-// });
-
-// jQuery(document).ready(function () {
-//   jQuery("#navbar > a").html(
-//     '<img src="https://sandbox.provo.edu:8443//wp-content/themes/pcsdtwentysixteen/assets/icons/dark/menu.png" alt="" /> Menu'
-//   );
-// });
-
-// jQuery("#cludo-search-form #search-button").on("click", function () {
-  // event.preventDefault();
-  // jQuery("#cludo-search-form").toggleClass("active");
-// });
-
-
-
 //Clicking the X on the alert will close the alert section. it will also set a cookie with the name "alert"
 jQuery(".closeAlert").click(function () {
   jQuery(".alerts").css("display", "none");
@@ -81,11 +46,7 @@ Set cookie that expires at the end of the day
 =============================================================================================================
 */
 function setcookie(cname, cvalue) {
-  //expire in a year
-  //var d = new Date();
-  //d.setTime(d.getTime() + (24 * 60 * 60 * 1000 * 7));
-  //var expires = "expires="+d.toUTCString();
-  //expire at midnight the following day
+
 
   var now = new Date();
   var expire = new Date();
@@ -100,9 +61,6 @@ function setcookie(cname, cvalue) {
   var expires = "expires=" + expire.toString();
   document.cookie = cname + "=" + cvalue + "; " + expires + "; path=/";
 }
-
-
-
 
 /*
 =============================================================================================================
@@ -151,8 +109,6 @@ jQuery(document).ready(function () {
     });
   });
 });
-
-
 
 /*
 ==================================================================================================
