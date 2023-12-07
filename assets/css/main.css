@@ -477,8 +477,8 @@ Stay Connected/Stay Current
 }
 
 #stayCurrent ul:nth-child(2) a {
-    background-color: var(--stu-color);
-    color: #fff;
+    background-color: var(--cal-color);
+    color: var(--contrast-text-color);
     padding: 1em;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;

@@ -54,6 +54,10 @@
 
 #navbar .calendar {
     background-color: var(--cal-color);
+   
+}
+#navbar .calendar a {
+    color: var(--contrast-text-color);
 }
 
 #navbar .community {
