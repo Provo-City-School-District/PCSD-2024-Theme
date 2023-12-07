@@ -149,7 +149,7 @@ $get_to_know_fields = get_fields();
 								<!-- <a href="<?php the_permalink(); ?>">Read More <span class="rightarrow"></span></a> -->
 							</div>
 							<p class="readMore"><a href="<?php the_permalink(); ?>">Read More <span class="rightarrow"></span></a></p>
-							<p class="postDate"><?php the_date(); ?></p>
+							<p class="postDate"><?php echo get_the_date(); ?></p>
 
 						</article>
 				<?php endwhile;
