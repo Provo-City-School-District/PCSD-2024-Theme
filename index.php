@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-<main id="mainContent" class="sidebar">
+<main id="mainContent" class="sidebar <?php if(is_front_page()){echo 'frontPageIndex';}?>">
 	<?php custom_breadcrumbs(); ?>
 	<div id="currentPage">
 		<h1><?= bloginfo('name') ?> News</h1>
