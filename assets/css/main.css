@@ -515,17 +515,6 @@ Stay Connected/Stay Current
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* alerts */
 #mainContent .alerts h1 a {
     color: #fff;
@@ -754,16 +743,6 @@ ul.policystyle li:nth-child(even) ul li {
 
     }
 }
-
-
-
-/* weglot fix  */
-
-.weglot-default {
-    z-index: 1001;
-}
-
-
 
 /* directory search/filter  */
 #directorySearchIcon {
