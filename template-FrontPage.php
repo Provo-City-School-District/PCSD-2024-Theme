@@ -6,7 +6,6 @@ get_header();
 
 //fetch all stored variables from the control post
 $get_to_know_fields = get_fields();
-//print_r($get_to_know_fields);
 ?>
 
 
@@ -109,7 +108,6 @@ $get_to_know_fields = get_fields();
 			<?php
 			wp_reset_query();
 			$topMenu = get_field('select_a_menu');
-			// $menu_args = array('menu' => '1009');
 			wp_nav_menu(array('menu' => $topMenu));
 			?>
 		</section>
@@ -120,7 +118,6 @@ $get_to_know_fields = get_fields();
 			<p>The latest news from Provo City School District</p>
 			<div class="stories">
 				<?php
-				// excluding ID 1012. which is the Board Schedule.
 				$the_query = new WP_Query(array('posts_per_page' => 3, 'category_name'  => 'news', 'post_type'  => 'post'));
 				if ($the_query->have_posts()) :
 					while ($the_query->have_posts()) : $the_query->the_post(); ?>
