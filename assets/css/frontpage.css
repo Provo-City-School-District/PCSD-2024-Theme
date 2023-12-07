@@ -87,11 +87,11 @@ Home Page News
 	gap: 1%;
 }
 
-#homeNews .stories article,
+/* #homeNews .stories article,
 #homeNews .moreNews,
 #homeNews .categories-6h ul li {
 	background-color: var(--theme-white);
-}
+} */
 
 #homeNews .stories .articleContent {
 	padding-left: 5%;
