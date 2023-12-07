@@ -32,7 +32,7 @@ $get_to_know_fields = get_fields();
 				</header>
 			
 			</article>
-			<button class="closeAlert"><img src="https://globalassets.provo.edu/image/icons/round-delete-button-white.svg" alt="Close Alerts" /></button>
+			<button class="closeAlert"></button>
 		<?php endwhile;
 		?>
 

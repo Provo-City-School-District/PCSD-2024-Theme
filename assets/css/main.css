@@ -545,7 +545,10 @@ Stay Connected/Stay Current
     right: 10px;
     top: 50px;
     background: transparent;
+    background-image: url(../icons/round-delete-button-white.svg);
+    background-size: cover;
 }
+
 
 /*
 --------------------------------------------------------------------
