@@ -65,6 +65,7 @@ include_once('includes/pcsd-rss-featured-image.php');
 include_once('includes/pcsd-dependencies.php');
 include_once('includes/pcsd-shortcodes.php');
 include_once('includes/pcsd-tag-stripper.php');
+include_once('includes/pcsd-breadcrumbs.php');
 
 /*==========================================================================================
 // Favicon
