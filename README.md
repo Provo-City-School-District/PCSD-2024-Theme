@@ -1,5 +1,5 @@
-# PCSD-2023-ParentTheme
+# PCSD-2024-Theme
 
-Theme developed by Provo City School District For use on Website
+Theme developed by Provo City School District For use on Websites
 
 Design/Engineer Team: Shauna Sprunger,Rob Francom, Josh Espinoza
