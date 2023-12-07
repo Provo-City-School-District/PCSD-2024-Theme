@@ -133,7 +133,7 @@ $get_to_know_fields = get_fields();
 									} elseif (has_post_thumbnail()) {
 										the_post_thumbnail();
 									} else { ?>
-										<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/building-image.jpg'; ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" width="217" height="175">
+										<img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/building-image.jpg'; ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" width="217" height="175">
 									<?php } ?>
 
 								</div>
