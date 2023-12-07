@@ -42,7 +42,7 @@
 			<?php wp_nav_menu(array('menu' => 'header-menu')); ?>
 		</nav>
 		<div class="siteSearch griditem">
-			<a href="https://provo.edu/search-results/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/dark/search-loupe.svg" width="25px"></a>
+			<a href="https://provo.edu/search-results/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/search-loupe.svg" width="25px"></a>
 		</div>
 
 	</header><!-- end mainHeader -->
