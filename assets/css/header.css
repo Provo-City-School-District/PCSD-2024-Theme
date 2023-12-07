@@ -103,9 +103,11 @@
     place-self: center;
 
 }
+
 #trp-floater-ls.trp-top-right {
     right: 25%;
 }
+
 @media (min-width: 800px) {
     #mainHeader {
         grid-template-columns: minmax(350px, 450px) 1fr 100px;
@@ -165,14 +167,15 @@
         right: 10px;
         border-radius: 5px 5px 0 0;
     }
+
     #navbar ul li {
         margin-bottom: -18px;
     }
-    
+
     #navbar li.active {
         min-height: 40px;
         margin-top: -15px;
-    
+
     }
 }
 

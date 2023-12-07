@@ -16,6 +16,7 @@
   --link-hover-color: #df6d1b;
 
 }
+
 #socialIcon path {
-  fill: var(--main-color); /* Replace with your desired color */
+  fill: var(--main-color);
 }

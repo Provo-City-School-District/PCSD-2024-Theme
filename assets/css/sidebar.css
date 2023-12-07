@@ -1,9 +1,11 @@
 .rightSidebar {
   margin-top: -26px
 }
+
 .rightSidebar.categories p {
   color: var(--theme-black);
 }
+
 .rightSidebar ul {
   list-style: none;
 }
@@ -31,13 +33,15 @@
   color: #dce2e8;
   font-size: 1.05em;
 }
+
 .rightSidebar.categories h2,
 .rightSidebar.categories h2 a,
 .rightSidebar.categories h3,
-.rightSidebar.categories h3 a  {
-  color: var( --main-color);
+.rightSidebar.categories h3 a {
+  color: var(--main-color);
 
 }
+
 /* ============================================== Utility Classes ============================================== */
 
 .sidebarImg {
@@ -91,30 +95,36 @@
 #rightSidebar.categories {
   background-color: var(--odd-color);
 }
+
 #rightSidebar.categories a {
-  color:var(--link-color);
+  color: var(--link-color);
 }
+
 #rightSidebar.categories a:hover {
-  color:var(--link-hover-color);
+  color: var(--link-hover-color);
 }
+
 #rightSidebar.categories .categories-6h ul {
-	display: grid;
-	grid-template-columns: 1fr;
-	list-style: none;
-	gap: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  gap: 1em;
 }
+
 #rightSidebar.categories .categories-6h ul li {
-	background-color: var(--theme-white);
+  background-color: var(--theme-white);
   display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
+
 #rightSidebar.categories .categories-6h ul li a {
-  width:100%;
+  width: 100%;
   text-align: center;
 }
+
 #rightSidebar.categories .categories-6h ul li a::before {
   content: '';
   width: 100%;
@@ -125,6 +135,7 @@
   background-size: cover;
   display: block;
 }
+
 #rightSidebar .buttonlink {
   background: #dce2e8;
   border: 1px solid rgba(0, 0, 0, 0.1);

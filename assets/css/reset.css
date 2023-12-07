@@ -89,15 +89,22 @@ p {
   margin: 0;
 }
 
-table {width: 100%;  border-spacing: 0;}
-table td, table th {
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+table td,
+table th {
   border: 1px solid var(--odd-color);
   padding: 5px;
   text-align: center;
   vertical-align: middle;
 }
-video, .wp-video {
-  width:100%!important;
-  height: auto!important;
-  max-width: 100%!important;
+
+video,
+.wp-video {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
 }
