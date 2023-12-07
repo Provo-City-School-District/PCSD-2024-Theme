@@ -57,7 +57,11 @@ function pcsd_assets()
 }
 add_action('wp_enqueue_scripts', 'pcsd_assets', 9999);
 
-
+/*==========================================================================================
+Dashboard Setup
+============================================================================================*/
+include_once('includes/PCSD-dashboard-setup.php');
+include_once('includes/pcsd-rss-featured-image.php');
 
 // Remove type from scripts and styles
 add_filter('style_loader_tag', 'codeless_remove_type_attr', 10, 2);
@@ -66,11 +70,6 @@ function codeless_remove_type_attr($tag, $handle)
 {
 	return preg_replace("/type=['\"]text\/(javascript|css)['\"]/", '', $tag);
 }
-// Enable Featured Images
-add_theme_support('post-thumbnails');
-
-// Add Menu Support
-add_theme_support('menus');
 
 
 // Wordpress Menus Registration
