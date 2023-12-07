@@ -468,27 +468,25 @@ Stay Connected/Stay Current
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     display: grid;
-    grid-template-columns: 1fr 1em;
-    gap: .5em;
 }
 
-#stayCurrent ul:nth-child(2) a:after {
+/* #stayCurrent ul:nth-child(2) a:after {
     content: '';
-    background-image: url(../icons/light/register.png);
+    background-image: url(../icons/register.png);
     background-size: cover;
     position: unset;
     left: unset;
     width: 19px;
     height: 19px;
-}
+} */
 
-#stayCurrent.register ul:nth-child(2) a:after {
-    background-image: url(../icons/light/register.png);
+/* #stayCurrent.register ul:nth-child(2) a:after {
+    background-image: url(../icons/register.png);
 }
 
 #stayCurrent.calendar ul:nth-child(2) a:after {
     background-image: url(../icons/light/calendar.svg);
-}
+} */
 
 @media (min-width:700px) {
 
@@ -882,35 +880,35 @@ form .block {
 /*================================================================================================================
 category styles
 ================================================================================================================*/
-.categories-6h ul li a::before {
-    background-image: url(https://provo.edu/wp-content/uploads/2023/01/category-fallback.jpg);
+/* .categories-6h ul li a::before {
+    background-image: url(../img/background/);
 }
 
 .categories-6h ul li.classroom a::before {
-    background-image: url(https://provo.edu/wp-content/uploads/2023/01/classroom.jpg);
-}
+    background-image: url(../img/classroom.jpg);
+} */
 
-.categories-6h ul li.recog:before {
-    background-image: url(https://provo.edu/wp-content/uploads/2023/01/recog.jpg);
-}
+/* .categories-6h ul li.recog:before {
+    background-image: url(../img/recog.jpg);
+} */
 
-.categories-6h ul li.schools a::before {
-    background-image: url(https://provo.edu/wp-content/uploads/2023/01/schools.jpg);
+/* .categories-6h ul li.schools a::before {
+    background-image: url(../img/schools.jpg);
 }
 
 .categories-6h ul li.cte a::before {
-    background-image: url(https://provo.edu/wp-content/uploads/2023/01/cte.jpg);
+    background-image: url(../img/cte.jpg);
 }
 
 .categories-6h ul li.inno a::before {
-    background-image: url(https://provo.edu/wp-content/uploads/2023/01/innovation.jpg);
+    background-image: url(../img/innovation.jpg);
 }
 
 .categories-6h ul li.business a::before {
-    background-image: url(https://provo.edu/wp-content/uploads/2023/01/business.jpg);
-}
+    background-image: url(../img/business.jpg);
+} */
 
-.categories-6h ul li.schoolboard a::before {
+/* .categories-6h ul li.schoolboard a::before {
     background-image: url(https://provo.edu/wp-content/uploads/2023/01/public-news-story-board-report.jpg);
 }
 
@@ -919,7 +917,7 @@ category styles
 }
 .categories-6h ul li.podcast a::before {
     background-image: url(https://provo.edu/wp-content/uploads/2023/08/podcast-banner-with-image-226.jpg);
-}
+} */
 
 /* Featured image Styles for Single post */
 .featured-image-full {

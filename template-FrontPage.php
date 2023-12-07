@@ -156,11 +156,11 @@ $get_to_know_fields = get_fields();
 				?>
 			</div>
 			<p class="moreNews"><a href="https://provo.edu/news/">Read More District News <span class="rightarrow"></span></a></p>
-			<h2>News Categories</h2>
+			<!-- <h2>News Categories</h2>
 			<div class="categories-6h">
 
 				<?php wp_nav_menu(array('menu' => 'frontpage-categories')); ?>
-			</div>
+			</div> -->
 		</section> <!-- News Home Page End -->
 
 
