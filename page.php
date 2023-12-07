@@ -8,9 +8,7 @@ get_header();
 		<article id="activePost" class="activePost">
 
 			<?php
-			if (!is_page(array(12759,68201,68537))) {
-				do_shortcode('[modified-date]');
-			}
+			do_shortcode('[modified-date]');
 			if (have_posts()) :
 				while (have_posts()) : the_post(); ?>
 
@@ -26,8 +24,7 @@ get_header();
 		</article>
 	</div>
 	<?php
-	$sidebar = get_field('sidebar');
-	get_sidebar($sidebar);
+	get_sidebar();
 	?>
 </main>
 <?php
