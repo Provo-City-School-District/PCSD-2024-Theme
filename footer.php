@@ -13,12 +13,11 @@
 		?>
 	</section>
 </footer>
-<?php wp_footer(); ?>
-<?php
-
+<?php 
+wp_footer(); 
 if (is_page('search-results')) {
 ?>
-<!-- <script type="text/javascript" src="//customer.cludo.com/scripts/bundles/search-script.min.js"></script> -->
+	<!-- <script type="text/javascript" src="//customer.cludo.com/scripts/bundles/search-script.min.js"></script> -->
 	<script>
 		var CludoSearch;
 		(function() {
@@ -36,7 +35,7 @@ if (is_page('search-results')) {
 			CludoSearch.init();
 		})();
 	</script>
-<!--[if lte IE 9]>
+	<!--[if lte IE 9]>
 	<script src="https://api.cludo.com/scripts/xdomain.js" slave="https://api.cludo.com/proxy.html" type="text/javascript"></script>
 	<![endif]-->
 <?php
