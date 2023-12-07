@@ -16,7 +16,7 @@ News Highlights */
 	padding: 5px max(5px, 1%) 5px max(5px, 1%);
 	border-radius: 3px;
 	list-style: none;
-	border: 2px solid var(--main-blue-color);
+	border: 2px solid var(--main-color);
 	text-align: center;
 	background: var(--odd-color);
 	/* Older browsers */
@@ -25,7 +25,7 @@ News Highlights */
 	justify-content: center;
 	gap: 25px;
 	align-items: center;
-	color: var(--main-blue-color);
+	color: var(--main-color);
 }
 
 .employeeHighlights ul li i {

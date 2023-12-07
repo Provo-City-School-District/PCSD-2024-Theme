@@ -68,7 +68,7 @@ Home Page News
 	padding: 2em;
 	/* margin-bottom: 80px;
 	padding-top: 20px; */
-	background-color: var(--main-ltblue-color);
+	background-color: var(--main-offset);
 }
 
 #homeNews .stories {}

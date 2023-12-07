@@ -9,7 +9,7 @@
 }
 
 .departmentTiles h2 {
-	border-bottom: solid var(--main-blue-color) 3px;
+	border-bottom: solid var(--main-color) 3px;
 	padding-bottom: 1em;
 }
 

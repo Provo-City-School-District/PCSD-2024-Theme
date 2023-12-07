@@ -35,7 +35,7 @@
 .rightSidebar.categories h2 a,
 .rightSidebar.categories h3,
 .rightSidebar.categories h3 a  {
-  color: var( --main-blue-color);
+  color: var( --main-color);
 
 }
 /* ============================================== Utility Classes ============================================== */
