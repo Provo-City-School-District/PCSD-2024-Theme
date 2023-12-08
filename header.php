@@ -23,7 +23,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:600" rel="stylesheet">
 	<!--end Fonts -->
 	<meta name="theme-color" content="#ffffff ">
-	<?php wp_head(); ?>
+	<?php
+	wp_head();
+	$theme_vars = my_theme_variables();
+	?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -34,7 +37,8 @@
 
 		<div class="siteLogo griditem">
 			<a href="<?php echo home_url(); ?>">
-				<img alt="Provo City School District Home" class="websiteLogo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo/pcsd-logo-website-header-x2.png" />
+				<img alt="Provo City School District Home" class="websiteLogo" src="<?php echo $theme_vars['logo']; ?>" />
+				Provo High School
 			</a>
 		</div>
 
@@ -42,7 +46,7 @@
 			<?php wp_nav_menu(array('menu' => 'header-menu')); ?>
 		</nav>
 		<div class="siteSearch griditem">
-			<a href="https://provo.edu/search-results/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/search-loupe.svg" width="25px"></a>
+			<a href="https://provo.edu/search-results/"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/search-loupe.svg" width="25px"></a>
 		</div>
 
 	</header><!-- end mainHeader -->
