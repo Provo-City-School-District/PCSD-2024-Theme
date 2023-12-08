@@ -24,8 +24,9 @@
     max-height: 75px;
 }
 
-.siteLogo address {
-    margin-top: -15px;
+.siteLogo a {
+    display: flex;
+    align-items: center;
 }
 
 .siteSearch {
@@ -182,9 +183,26 @@
 
     }
 }
-
+@media (min-width: 800px) and (max-width: 1100px) {
+    #mainContent {
+        margin-top: 128px;
+    }
+    #navbar ul {
+        padding-right: 3em;
+    }
+    #navbar ul li {
+        margin-bottom: -11px;
+          
+    }
+    #trp-floater-ls.trp-top-right {
+        top: 70px;
+    }
+}
 
 @media (min-width: 1100px) {
+    /* #mainContent {
+        margin-top: 140px;
+    } */
     #navbar {
         grid-column: 1 / span 2;
     }
@@ -202,7 +220,10 @@
     #navbar ul {
         padding-right: unset;
     }
-
+    #navbar ul li {
+        margin-bottom: -22px;
+          
+    }
     body.admin-bar #trp-floater-ls.trp-top-right {
         top: 102px;
     }

@@ -55,7 +55,7 @@ function pcsd_assets()
 		wp_enqueue_script('404easterEgg');
 	}
 }
-add_action('wp_enqueue_scripts', 'pcsd_assets', 9999);
+add_action('wp_enqueue_scripts', 'pcsd_assets', 9990);
 
 /*==========================================================================================
 Dashboard Setup
