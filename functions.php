@@ -60,12 +60,12 @@ add_action('wp_enqueue_scripts', 'pcsd_assets', 9990);
 /*==========================================================================================
 Dashboard Setup
 ============================================================================================*/
-include_once(get_template_directory() . 'includes/pcsd-dashboard-setup.php');
-include_once(get_template_directory() . 'includes/pcsd-rss-featured-image.php');
-include_once(get_template_directory() . 'includes/pcsd-dependencies.php');
-include_once(get_template_directory() . 'includes/pcsd-shortcodes.php');
-include_once(get_template_directory() . 'includes/pcsd-tag-stripper.php');
-include_once(get_template_directory() . 'includes/pcsd-breadcrumbs.php');
+include_once(get_template_directory() . '/includes/pcsd-dashboard-setup.php');
+include_once(get_template_directory() . '/includes/pcsd-rss-featured-image.php');
+include_once(get_template_directory() . '/includes/pcsd-dependencies.php');
+include_once(get_template_directory() . '/includes/pcsd-shortcodes.php');
+include_once(get_template_directory() . '/includes/pcsd-tag-stripper.php');
+include_once(get_template_directory() . '/includes/pcsd-breadcrumbs.php');
 
 /*==========================================================================================
 // Favicon
