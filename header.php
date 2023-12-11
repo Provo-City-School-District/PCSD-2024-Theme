@@ -38,7 +38,7 @@
 		<div class="siteLogo griditem">
 			<a href="<?php echo home_url(); ?>">
 				<img alt="Provo City School District Home" class="websiteLogo" src="<?php echo $theme_vars['logo']; ?>" />
-				Provo High School
+				<?php echo $theme_vars['full_school_name']; ?>
 			</a>
 		</div>
 
