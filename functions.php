@@ -38,13 +38,7 @@ function pcsd_assets()
 	}
 	if (is_page_template(
 		array(
-			'template-department_2022.php',
-			'template-department_2022_links.php',
-			'template-department_2022-tiles-news.php',
-			'template-department-staticmedia.php',
-			'template-department_fulltileimages.php',
-			'template-department-tile-full-width.php',
-			'template-department_2022_no_top_menu.php',
+			'template-department_2024_news_links.php',
 		)
 	)) {
 		wp_enqueue_style('department', get_template_directory_uri() . '/assets/css/department-styles.css', '', '1.0.01', false);

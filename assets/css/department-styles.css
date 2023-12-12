@@ -13,7 +13,7 @@ News Highlights */
 
 .employeeHighlights ul li a {
 	margin: 20px 0 0 0;
-	padding: 5px max(5px, 1%) 5px max(5px, 1%);
+	padding: 1em max(5px, 1%);
 	border-radius: 3px;
 	list-style: none;
 	border: 2px solid var(--main-color);
