@@ -28,35 +28,6 @@ News Highlights */
 	color: var(--main-color);
 }
 
-.employeeHighlights ul li i {
-	display: inline-block;
-	background-size: contain;
-	padding: 30px;
-	margin-left: min(10px, 5%);
-}
-
-.employeeHighlights ul li i {
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.employeeHighlights ul li .calendar {
-	background-image: url('../icons/dark/calendar.png');
-}
-
-.employeeHighlights ul li .news {
-	background-image: url('../icons/dark/district-news-2.png');
-}
-
-.employeeHighlights ul li .notif {
-	background-image: url('../icons/dark/sent-mail.png');
-}
-
-.employeeHighlights ul li .tech {
-	background-image: url('../icons/dark/helpdesk-dk.png');
-}
-
-
 @media (min-width:700px) {
 	.employeeHighlights ul {
 		grid-template-columns: repeat(3, 1fr);
