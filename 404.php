@@ -2,10 +2,10 @@
 get_header();
 ?>
 <main id="mainContent" class="sidebar">
+	<?php custom_breadcrumbs(); ?>
+	<div id="currentPage">
 
-	<section class="content page">
-		<?php custom_breadcrumbs(); ?>
-		<div id="currentPage">
+		<article id="activePost" class="activePost">
 			<h1>404 Page not Found</h1>
 			<h2>Oops! The web page you&#39;re looking for can&#39;t be found.</h2>
 			<img id="image404" class="" src="https://globalassets.provo.edu/image/404/404error1.jpg" alt="" />
@@ -22,9 +22,11 @@ get_header();
 					x.parentNode.insertBefore(s, x);
 				})();
 			</script>
-		</div>
-	</section>
-	<?php get_sidebar(); ?>
+		</article>
+	</div>
+	<?php
+	get_sidebar();
+	?>
 </main>
 <?php
 get_footer();
