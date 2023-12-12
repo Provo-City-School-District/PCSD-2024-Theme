@@ -39,7 +39,7 @@ $theme_vars = my_theme_variables();
 
 	</section>
 	<div class="notgrid2">
-		280 West 940 North Provo, Utah 801-374-4800
+	<?php echo $theme_vars['school_address']; ?>
 	</div>
 	<?php
 	wp_reset_query();
