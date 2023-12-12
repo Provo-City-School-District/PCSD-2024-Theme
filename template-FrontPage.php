@@ -6,6 +6,8 @@ get_header();
 
 //fetch all stored variables from the control post
 $get_to_know_fields = get_fields();
+// gather child theme variables
+$theme_vars = my_theme_variables();
 ?>
 
 
@@ -43,9 +45,9 @@ $get_to_know_fields = get_fields();
 	wp_reset_query();
 	?>
 
-	<h1 class="novisibility">Provo City School District</h1>
+	<h1 class="novisibility"><?php echo $theme_vars['full_school_name']; ?></h1>
 	<section id="announcments">
-		<h2>Provo City School District Announcements</h2>
+		<h2><?php echo $theme_vars['full_school_name']; ?> Announcements</h2>
 		<?php
 
 		if ($get_to_know_fields['video_or_slider'] == 'video') {
@@ -114,8 +116,8 @@ $get_to_know_fields = get_fields();
 		<!-- I am Buttons Home Page End -->
 		<section id="homeNews">
 			<!-- News Home Page Start -->
-			<h1>District News & Events</h1>
-			<p>The latest news from Provo City School District</p>
+			<h1><?php echo $theme_vars['short_school_name']; ?> News & Events</h1>
+			<p>The latest news from <?php echo $theme_vars['full_school_name']; ?></p>
 			<div class="stories">
 				<?php
 				$the_query = new WP_Query(array('posts_per_page' => 3, 'category_name'  => 'news', 'post_type'  => 'post'));
@@ -155,7 +157,7 @@ $get_to_know_fields = get_fields();
 				endif;
 				?>
 			</div>
-			<p class="moreNews"><a href="https://provo.edu/news/">Read More District News <span class="rightarrow"></span></a></p>
+			<p class="moreNews"><a href="https://provo.edu/news/">Read More <?php echo $theme_vars['short_school_name']; ?> News <span class="rightarrow"></span></a></p>
 			<!-- <h2>News Categories</h2>
 			<div class="categories-6h">
 
