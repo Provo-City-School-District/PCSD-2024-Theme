@@ -113,7 +113,6 @@ $theme_vars = my_theme_variables();
 			wp_nav_menu(array('menu' => $topMenu));
 			?>
 		</section>
-		<!-- I am Buttons Home Page End -->
 		<section id="homeNews">
 			<!-- News Home Page Start -->
 			<h1><?php echo $theme_vars['short_school_name']; ?> News & Events</h1>
@@ -158,11 +157,6 @@ $theme_vars = my_theme_variables();
 				?>
 			</div>
 			<p class="moreNews"><a href="https://provo.edu/news/">Read More <?php echo $theme_vars['short_school_name']; ?> News <span class="rightarrow"></span></a></p>
-			<!-- <h2>News Categories</h2>
-			<div class="categories-6h">
-
-				<?php wp_nav_menu(array('menu' => 'frontpage-categories')); ?>
-			</div> -->
 		</section> <!-- News Home Page End -->
 
 
@@ -170,20 +164,11 @@ $theme_vars = my_theme_variables();
 			<!-- Start Social Media -->
 			<h1>Social Media</h1>
 			See what's being discussed & shared
-			<!-- <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
-			<link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" /> -->
-
-
 			<ul class="sociallinks">
 				<li><a href=""><?php echo get_svg('socialmedia-insta'); ?></a></li>
 				<li><a href=""><?php echo get_svg('socialmedia-twitter'); ?></a></li>
 				<li><a href=""><?php echo get_svg('socialmedia-facebook'); ?></a></li>
 			</ul>
-
-			<!-- <h2>Instagram Feed</h2>
-			<ul class="juicer-feed" data-feed-id="pcsd_webteam">
-				<h1 class="referral"><a href="https://www.juicer.io">Powered by Juicer.io</a></h1>
-			</ul> -->
 		</section> <!-- End Social Media -->
 	</div><!-- End of post slider content -->
 </main><!-- End of #mainContent -->
