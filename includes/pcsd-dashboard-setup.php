@@ -11,6 +11,7 @@ register_nav_menus(
 	array(
 		'header-menu' => __('Header Menu'),
 		'frontpage-categories' => __('Front Page Categories')
+
 	)
 );
 /*==========================================================================================
