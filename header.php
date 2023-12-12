@@ -2,8 +2,9 @@
 <html>
 
 <head>
+	<?php $theme_vars = my_theme_variables(); ?>
 	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FTPJPV04N2"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo $theme_vars['google_tag_manager_id']; ?>"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 
@@ -12,7 +13,7 @@
 		}
 		gtag('js', new Date());
 
-		gtag('config', 'G-FTPJPV04N2');
+		gtag('config', '<?php echo $theme_vars['google_tag_manager_id']; ?>');
 	</script>
 	<meta charset="utf-8" />
 	<title><?php if (is_home()) { ?>News | <?php } ?><?php if (is_page()) {
@@ -25,7 +26,6 @@
 	<meta name="theme-color" content="#ffffff ">
 	<?php
 	wp_head();
-	$theme_vars = my_theme_variables();
 	?>
 </head>
 
