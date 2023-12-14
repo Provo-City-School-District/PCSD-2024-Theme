@@ -6,4 +6,9 @@
 		<li><a href="https://www.instagram.com/provocityschooldistrict/"><img src="//globalassets.provo.edu/image/icons/instagram.svg" alt="Link to Instagram" /></a></li>
 		<li><a href="https://twitter.com/ProvoSchoolDist"><img src="//globalassets.provo.edu/image/icons/twitter.svg" alt="Link to Twitter" /></a></li>
 	</ul>
+<h2>A/B Calendar</h2>
+<?php echo do_shortcode( '[calendar id="2064"]' ); ?>	
+<h2>Important Dates</h2>
+
+<?php echo do_shortcode( '[calendar id="2064"]' ); ?>	
 </aside>
