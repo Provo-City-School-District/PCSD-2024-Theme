@@ -9,8 +9,8 @@ add_theme_support('menus');
 // Wordpress Menus Registration
 register_nav_menus(
 	array(
-		'header-menu' => __('Header Menu'),
-		'frontpage-categories' => __('Front Page Categories')
+		'header-menu' => __('Header Menu')
+
 	)
 );
 /*==========================================================================================
