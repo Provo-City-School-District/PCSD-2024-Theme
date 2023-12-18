@@ -96,6 +96,10 @@
   color: var(--main-color);
   border-radius: 5px;
 }
+.simcal-default-calendar-list ul.simcal-events, .simcal-default-calendar-list ul.simcal-events li.simcal-event {
+  margin-top:0;
+  margin-bottom:0;
+}
 .sidebar .simcal-default-calendar-list .simcal-event-details {
   position: relative;
   /* color: var(--main-color); */
@@ -109,9 +113,18 @@
   width: 100%;
   padding-left:5px
 }
+.sidebar .impDates .simcal-default-calendar-list .simcal-event-details p {
+  background-color: var(--theme-white);
+  color: var(--main-color);
+}
+.sidebar .impDates .simcal-default-calendar-list .simcal-event-details {
+  /* position: relative; */
+  /* color: var(--main-color); */
+  border-bottom: unset;
+}
 .sidebar .simcal-default-calendar-list .simcal-event-details h2 {
   color: var(--main-color);
-  margin-top: 25px;
+  margin-top: 45px;
 
   padding-left:5px
 
