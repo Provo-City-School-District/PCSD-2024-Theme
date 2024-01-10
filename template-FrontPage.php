@@ -97,9 +97,9 @@ $theme_vars = my_theme_variables();
 	<div id="belowSlider">
 		<section id="stayCurrent" class="grid2 calendar">
 			<ul>
-				<li><a href="<?php echo $theme_vars['insta_link'] ?>"><?php echo get_svg('socialmedia-insta'); ?></a></li>
-				<li><a href="<?php echo $theme_vars['facebook_link'] ?>"><?php echo get_svg('socialmedia-twitter'); ?></a></li>
-				<li><a href="<?php echo $theme_vars['twitter_link'] ?>"><?php echo get_svg('socialmedia-facebook'); ?></a></li>
+				<li><a href=""><?php echo get_svg('socialmedia-insta'); ?></a></li>
+				<li><a href=""><?php echo get_svg('socialmedia-twitter'); ?></a></li>
+				<li><a href=""><?php echo get_svg('socialmedia-facebook'); ?></a></li>
 			</ul>
 			<ul>
 				<li><a href="<?php echo get_field('hero_link_address'); ?>"><?php echo get_field('hero_link_label'); ?></a></li>
@@ -165,9 +165,9 @@ $theme_vars = my_theme_variables();
 			<h1>Social Media</h1>
 			See what's being discussed & shared
 			<ul class="sociallinks">
-				<li><a href="<?php echo $theme_vars['insta_link'] ?>"><?php echo get_svg('socialmedia-insta'); ?></a></li>
-				<li><a href="<?php echo $theme_vars['facebook_link'] ?>"><?php echo get_svg('socialmedia-twitter'); ?></a></li>
-				<li><a href="<?php echo $theme_vars['twitter_link'] ?>"><?php echo get_svg('socialmedia-facebook'); ?></a></li>
+				<li><a href=""><?php echo get_svg('socialmedia-insta'); ?></a></li>
+				<li><a href=""><?php echo get_svg('socialmedia-twitter'); ?></a></li>
+				<li><a href=""><?php echo get_svg('socialmedia-facebook'); ?></a></li>
 			</ul>
 		</section> <!-- End Social Media -->
 	</div><!-- End of post slider content -->

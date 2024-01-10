@@ -7,11 +7,6 @@ function my_theme_variables() {
         'short_school_name' => 'Provo High',
         'school_address' => '1199 N. Lakeshore Dr. Provo, Utah 84601',
         'google_tag_manager_id' => 'G-FTPJPV04N2',
-        'top_sidebar_cal' => '[calendar id="2064"]',
-        'bot_sidebar_cal' => '[calendar id="2066"]',
-        'insta_link' => 'instatest',
-        'facebook_link' => 'facebooktest',
-        'twitter_link' => 'twittertest',
         // 'search_icon' => get_template_directory_uri() . '/assets/icons/search-loupe.svg'
     );
     return $my_theme_variables;

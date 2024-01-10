@@ -179,7 +179,7 @@ Utility
 @media only screen and (min-width: 700px) {
     .grid2 {
         grid-template-columns: repeat(2, minmax(50%, 1fr));
-        gap: 2em;
+        /* gap: unset; */
         justify-content: space-evenly;
     }
 
@@ -190,9 +190,9 @@ Utility
 }
 
 @media only screen and (min-width: 1600px) {
-    /* .grid2 {
+    .grid2 {
         gap: unset;
-    } */
+    }
 }
 
 /* grid3 styling */

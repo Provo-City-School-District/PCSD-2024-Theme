@@ -20,9 +20,6 @@
 #socialIcon path {
   fill: var(--main-color);
 }
-.sidebar #socialIcon path {
-  fill: var(--theme-white);
-}
 .siteLogo a {
   font-family: 'Times New Roman', Times, serif;
 }
