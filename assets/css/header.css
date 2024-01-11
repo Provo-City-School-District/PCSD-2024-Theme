@@ -138,7 +138,7 @@
     }
 
     body.admin-bar #trp-floater-ls.trp-top-right {
-        top: 112px;
+        top: 102px;
     }
 
     #navbar .homeLink {
@@ -229,7 +229,7 @@
     }
 
     #trp-floater-ls.trp-top-right {
-        top: 72px;
+        top: 70px;
         right: 25px;
     }
 }
