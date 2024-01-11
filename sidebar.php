@@ -1,14 +1,26 @@
 <aside id="rightSidebar" class="rightSidebar">
-
+	<?php
+	// gather child theme variables
+	$theme_vars = my_theme_variables();
+	?>
 	<h2>Follow Us</h2>
 	<ul class="sociallinks">
-		<li><a href="https://www.facebook.com/provoschooldistrict/"><img src="//globalassets.provo.edu/image/icons/facebook.svg" alt="Link to Facebook" /></a></li>
-		<li><a href="https://www.instagram.com/provocityschooldistrict/"><img src="//globalassets.provo.edu/image/icons/instagram.svg" alt="Link to Instagram" /></a></li>
-		<li><a href="https://twitter.com/ProvoSchoolDist"><img src="//globalassets.provo.edu/image/icons/twitter.svg" alt="Link to Twitter" /></a></li>
+		<li><a href="<?php echo $theme_vars['insta_link'] ?>"><?php echo get_svg('socialmedia-insta'); ?></a></li>
+		<li><a href="<?php echo $theme_vars['facebook_link'] ?>"><?php echo get_svg('socialmedia-twitter'); ?></a></li>
+		<li><a href="<?php echo $theme_vars['twitter_link'] ?>"><?php echo get_svg('socialmedia-facebook'); ?></a></li>
 	</ul>
-<h2>A/B Calendar</h2>
-<?php echo do_shortcode( '[calendar id="2064"]' ); ?>	
-<h2>Important Dates</h2>
+	<?php
+	//load sidebar calendars
+	if (isset($theme_vars['top_sidebar_cal'])) {
+		echo '<h2>A/B Calendar</h2>';
+		echo do_shortcode($theme_vars['top_sidebar_cal']);
+	}
+	if (isset($theme_vars['bot_sidebar_cal'])) {
+		echo '<section class="impDates">';
+		echo '<h2>Important Dates</h2>';
+		echo do_shortcode($theme_vars['bot_sidebar_cal']);
+		echo '</section>';
+	}
+	?>
 
-<?php echo do_shortcode( '[calendar id="2064"]' ); ?>	
 </aside>
