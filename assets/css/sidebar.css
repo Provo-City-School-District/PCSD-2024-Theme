@@ -90,29 +90,48 @@
 .sidebar .personalvCard .assignedschool {
   margin-top: 15px;
 }
+
 /* ============================================== Calendar ============================================== */
 .sidebar .simcal-default-calendar-list {
   background-color: var(--theme-white);
   color: var(--main-color);
   border-radius: 5px;
 }
+
+.simcal-default-calendar-list ul.simcal-events,
+.simcal-default-calendar-list ul.simcal-events li.simcal-event {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .sidebar .simcal-default-calendar-list .simcal-event-details {
   position: relative;
   /* color: var(--main-color); */
   border-bottom: 2px solid var(--main-color);
 }
+
 .sidebar .simcal-default-calendar-list .simcal-event-details p {
   position: absolute;
   top: 0;
   color: var(--theme-white);
   background-color: var(--main-color);
   width: 100%;
-  padding-left:5px
+  padding-left: 5px
 }
+
+.sidebar .impDates .simcal-default-calendar-list .simcal-event-details p {
+  background-color: var(--theme-white);
+  color: var(--main-color);
+  font-size: 125%;
+  font-weight: 700;
+}
+
+.sidebar .impDates .simcal-default-calendar-list .simcal-event-details {
+  border-bottom: unset;
+}
+
 .sidebar .simcal-default-calendar-list .simcal-event-details h2 {
   color: var(--main-color);
-  margin-top: 25px;
-
-  padding-left:5px
-
+  margin-top: 30px;
+  padding-left: 5px;
 }

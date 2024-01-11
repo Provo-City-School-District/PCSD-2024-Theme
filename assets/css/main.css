@@ -155,7 +155,7 @@ Utility
 }
 
 /* grid2 styling */
-.grid2 {
+.grid2,.grid2_3 {
     display: grid;
     gap: 1em;
 }
@@ -169,7 +169,7 @@ Utility
     display: block;
 }
 
-.grid2 div:nth-child(2):has(video) {
+.grid2 div:nth-child(2):has(video),.grid2_3 div:nth-child(2):has(video) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,12 +177,16 @@ Utility
 }
 
 @media only screen and (min-width: 700px) {
+    .grid2,.grid2_3 {
+        gap: 2em;
+        justify-content: space-evenly; 
+    }
     .grid2 {
         grid-template-columns: repeat(2, minmax(50%, 1fr));
-        /* gap: unset; */
-        justify-content: space-evenly;
     }
-
+    .grid2_3{
+        grid-template-columns: 66% 1fr;
+    }
     #stayCurrent.grid2 {
         gap: 0;
     }
@@ -190,9 +194,6 @@ Utility
 }
 
 @media only screen and (min-width: 1600px) {
-    .grid2 {
-        gap: unset;
-    }
 }
 
 /* grid3 styling */
