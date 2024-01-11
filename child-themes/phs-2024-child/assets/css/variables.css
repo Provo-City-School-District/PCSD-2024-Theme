@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 :root {
   --main-color: #275a3b;
   --main-offset: #d6d6d6;
@@ -20,6 +21,10 @@
 #socialIcon path {
   fill: var(--main-color);
 }
-.siteLogo a {
-  font-family: 'Times New Roman', Times, serif;
+.sidebar #socialIcon path {
+  fill: var(--theme-white);
 }
+.siteLogo a {
+  font-family: 'Merriweather', serif;
+}
+
