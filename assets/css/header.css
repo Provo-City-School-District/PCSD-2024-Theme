@@ -26,6 +26,8 @@
 
 .siteLogo a {
     display: flex;
+    font-size: 1.5em;
+    gap:1em;
     align-items: center;
 }
 
@@ -110,10 +112,13 @@
 }
 
 #trp-floater-ls.trp-top-right {
-    right: 25%;
+    right: 15%;
 }
 
 @media (min-width: 800px) {
+    .siteLogo a {  
+        font-size: 2em;
+    }
     #mainHeader {
         grid-template-columns: minmax(350px, 450px) 1fr 100px;
         position: fixed;
