@@ -98,6 +98,7 @@ Home Page News
 #homeNews .stories article,
 #homeNews .moreNews {
 	background-color: var(--theme-white);
+	padding: 1em;
 }
 
 #homeNews .stories .articleContent {

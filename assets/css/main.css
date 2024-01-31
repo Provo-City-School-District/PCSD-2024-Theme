@@ -386,6 +386,8 @@ On Page Elements
 .postList .featured-image {
     max-height: 220px;
     overflow: hidden;
+    margin: -1em -1em 1em -1em;
+
 }
 
 /* post meta  */
