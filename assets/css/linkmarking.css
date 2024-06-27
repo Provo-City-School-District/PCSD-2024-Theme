@@ -144,41 +144,45 @@ link marking
 }
 
 /* these are so that the listed links have a the right icon once the javascript gives them a class*/
-.fwContent ul:not(.sub-nav-group, .subMenu, .menu) li.int,
-.currentContent ul:not(.sub-nav-group, .subMenu, .menu) li.int,
-.departmentTiles ul:not(.sub-nav-group, .subMenu, .menu) li.int,
-.activePost ul:not(.sub-nav-group, .subMenu, .menu) li.int,
-.grid3 ul:not(.sub-nav-group, .subMenu, .menu) li.int {
+.fwContent ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.int,
+.currentContent ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.int,
+.departmentTiles ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.int,
+.activePost ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.int,
+.grid3 ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.int,
+ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.int a {
     list-style-image: url(//globalassets.provo.edu/image/icons/file-blue.png) !important;
     list-style-position: inside !important;
     margin-left: -4px;
 }
 
-.fwContent ul:not(.sub-nav-group, .subMenu, .menu) li.pdf,
-.currentContent ul:not(.sub-nav-group, .subMenu, .menu) li.pdf,
-.departmentTiles ul:not(.sub-nav-group, .subMenu, .menu) li.pdf,
-.activePost ul:not(.sub-nav-group, .subMenu, .menu) li.pdf,
-.grid3 ul:not(.sub-nav-group, .subMenu, .menu) li.pdf {
+.fwContent ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.pdf,
+.currentContent ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.pdf,
+.departmentTiles ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.pdf,
+.activePost ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.pdf,
+.grid3 ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.pdf,
+ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.pdf a {
     list-style-image: url(//globalassets.provo.edu/image/icons/pdf.png) !important;
     list-style-position: inside !important;
     margin-left: -4px;
 }
 
-.fwContent ul:not(.sub-nav-group, .subMenu, .menu) li.xls,
-.currentContent ul:not(.sub-nav-group, .subMenu, .menu) li.xls,
-.departmentTiles ul:not(.sub-nav-group, .subMenu, .menu) li.xls,
-.activePost ul:not(.sub-nav-group, .subMenu, .menu) li.xls,
-.grid3 ul:not(.sub-nav-group, .subMenu, .menu) li.xls {
+.fwContent ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.xls,
+.currentContent ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.xls,
+.departmentTiles ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.xls,
+.activePost ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.xls,
+.grid3 ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.xls,
+ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.xls a {
     list-style-image: url(//globalassets.provo.edu/image/icons/xls.png) !important;
     list-style-position: inside !important;
     margin-left: -4px;
 }
 
-.fwContent ul:not(.sub-nav-group, .subMenu, .menu) li.ext,
-.currentContent ul:not(.sub-nav-group, .subMenu, .menu) li.ext,
-.departmentTiles ul:not(.sub-nav-group, .subMenu, .menu) li.ext,
-.activePost ul:not(.sub-nav-group, .subMenu, .menu) li.ext,
-.grid3 ul:not(.sub-nav-group, .subMenu, .menu) li.ext {
+.fwContent ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.ext,
+.currentContent ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.ext,
+.departmentTiles ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.ext,
+.activePost ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.ext,
+.grid3 ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.ext,
+ul:not(.sub-nav-group, .subMenu, .menu, .pageTableOfContents) li.ext a {
     list-style-image: url(//globalassets.provo.edu/image/icons/external-link-gray.svg) !important;
     list-style-position: inside !important;
     margin-left: -4px;
@@ -194,6 +198,7 @@ ul li.ext ul {
 
 /* Removes link marking from button */
 /* a:has(button)::before,*/
-a:has(button)::after {
+a:has(button)::after,
+a.anchor::after {
     visibility: hidden !important;
 }

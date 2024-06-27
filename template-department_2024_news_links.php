@@ -11,8 +11,11 @@ $theme_vars = my_theme_variables();
 	<?php custom_breadcrumbs(); ?>
 	<!-- Current Page Content -->
 	<div id="currentPage">
-
+		
 		<h1><?php the_title(); ?></h1>
+		<article id="pageContent">
+		<?php the_content(); ?>
+		</article>
 		<section id="stayCurrent" class="grid2 register">
 			<ul>
 				<li><a href=""><?php echo get_svg('socialmedia-insta'); ?></a></li>

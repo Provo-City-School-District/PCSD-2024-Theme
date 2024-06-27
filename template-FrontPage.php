@@ -95,18 +95,37 @@ $theme_vars = my_theme_variables();
 
 		?>
 	</section>
-	<section><?= do_shortcode($theme_vars['front_page_cal']); ?></section>
+	<section><a class="center" href="<?= $theme_vars['full_calendar_link']?>">View Full School Calendar</a><?= do_shortcode($theme_vars['front_page_cal']); ?></section>
 	</div>
 	<div id="belowSlider">
 		<section id="stayCurrent" class="grid2 calendar">
 			<ul>
 				<li><a href="<?php echo $theme_vars['insta_link'] ?>"><?php echo get_svg('socialmedia-insta'); ?></a></li>
-				<li><a href="<?php echo $theme_vars['facebook_link'] ?>"><?php echo get_svg('socialmedia-twitter'); ?></a></li>
-				<li><a href="<?php echo $theme_vars['twitter_link'] ?>"><?php echo get_svg('socialmedia-facebook'); ?></a></li>
+				<!-- <li><a href="<?php //echo $theme_vars['twitter_link'] ?>"><?php //echo get_svg('socialmedia-twitter'); ?></a></li> -->
+				<li><a href="<?php echo $theme_vars['facebook_link'] ?>"><?php echo get_svg('socialmedia-facebook'); ?></a></li>
 			</ul>
-			<ul>
-				<li><a href="<?php echo get_field('hero_link_address'); ?>"><?php echo get_field('hero_link_label'); ?></a></li>
-			</ul>
+			<?php
+				if(get_field('hero_link_address') || get_field('hero_link_2_address')) {
+					?>
+					<ul>
+						<?php
+							if(get_field('hero_link_label')) {
+								?>
+								<li class="calendar"><a href="<?php echo get_field('hero_link_address'); ?>"><?php echo get_field('hero_link_label'); ?></a></li>
+								<?php
+							}
+						?>
+						<?php
+							if(get_field('hero_link_2_label')) {
+								?>
+								<li class="newsletter"><a href="<?php echo get_field('hero_link_2_address'); ?>"><?php echo get_field('hero_link_2_label'); ?></a></li>
+								<?php
+							}
+						?>
+					</ul>
+					<?php
+				}
+			?>
 		</section>
 
 		<section class="wpMenu">

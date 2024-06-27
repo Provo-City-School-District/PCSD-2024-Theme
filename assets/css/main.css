@@ -133,6 +133,12 @@ Utility
     margin: 0 1em 1em 0;
 }
 
+.center {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .downarrow:after {
     content: "\25BC";
     font-size: 8px;
@@ -155,7 +161,8 @@ Utility
 }
 
 /* grid2 styling */
-.grid2,.grid2_3 {
+.grid2,
+.grid2_3 {
     display: grid;
     gap: 1em;
 }
@@ -169,7 +176,8 @@ Utility
     display: block;
 }
 
-.grid2 div:nth-child(2):has(video),.grid2_3 div:nth-child(2):has(video) {
+.grid2 div:nth-child(2):has(video),
+.grid2_3 div:nth-child(2):has(video) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,24 +185,28 @@ Utility
 }
 
 @media only screen and (min-width: 700px) {
-    .grid2,.grid2_3 {
+
+    .grid2,
+    .grid2_3 {
         gap: 2em;
-        justify-content: space-evenly; 
+        justify-content: space-evenly;
     }
+
     .grid2 {
         grid-template-columns: repeat(2, minmax(50%, 1fr));
     }
-    .grid2_3{
+
+    .grid2_3 {
         grid-template-columns: 66% 1fr;
     }
+
     #stayCurrent.grid2 {
         gap: 0;
     }
 
 }
 
-@media only screen and (min-width: 1600px) {
-}
+@media only screen and (min-width: 1600px) {}
 
 /* grid3 styling */
 .grid3 {
@@ -473,6 +485,8 @@ Stay Connected/Stay Current
     display: grid;
     margin: unset;
     justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 1em;
 }
 
 #stayCurrent ul:nth-child(1) {
@@ -480,33 +494,52 @@ Stay Connected/Stay Current
 }
 
 #stayCurrent ul:nth-child(2) a {
-    background-color: var(--cal-color);
-    color: var(--contrast-text-color);
+    background-color: var(--stu-color);
+    color: #fff;
     padding: 1em;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     display: grid;
+    grid-template-columns: 1fr 1em;
+    gap: .5em;
 }
 
-/* #stayCurrent ul:nth-child(2) a:after {
+#stayCurrent ul:nth-child(2) a:after {
     content: '';
-    background-image: url(../icons/register.png);
+    background-image: url(../icons/light/register.png);
     background-size: cover;
     position: unset;
     left: unset;
     width: 19px;
     height: 19px;
-} */
-
-/* #stayCurrent.register ul:nth-child(2) a:after {
-    background-image: url(../icons/register.png);
 }
 
-#stayCurrent.calendar ul:nth-child(2) a:after {
+#stayCurrent ul:nth-child(2) li:nth-child(2) a {
+    background-color: var(--light-grey);
+}
+
+
+
+#stayCurrent.register ul:nth-child(2) a:after {
+    background-image: url(../icons/light/register.png);
+}
+
+/* #stayCurrent ul:nth-child(2) li.calendar a:after {
     background-image: url(../icons/light/calendar.svg);
+}
+
+#stayCurrent ul:nth-child(2) li.newsletter a:after {
+    background-image: url(../icons/light/newsletter-icon.png);
 } */
 
 @media (min-width:700px) {
+    #stayCurrent ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #stayCurrent ul:nth-child(2) {
+        display: flex;
+    }
 
     #stayCurrent ul:nth-child(1) {
         justify-self: start;
@@ -525,8 +558,6 @@ Stay Connected/Stay Current
 
 
 
-
-
 /* Full width Styling */
 .fwtop,
 .fullwidth #stayCurrent,
@@ -535,7 +566,8 @@ Stay Connected/Stay Current
 .fullwidth .employeeHighlights,
 .fullwidth .departmentTiles,
 .fullwidth h1,
-#currentPage h1 {
+#currentPage h1,
+#currentPage #pageContent {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
@@ -645,7 +677,7 @@ ul.policystyle li:nth-child(even) ul li {
 
 
 /* Directory Grid  */
-.directoryGrid {
+/* .directoryGrid {
     display: flex;
     flex-wrap: wrap;
     max-width: 1500px;
@@ -724,6 +756,100 @@ ul.policystyle li:nth-child(even) ul li {
 
 .directoryGrid .personalvCard ul li.cteName {
     font-size: 0.8em;
+} */
+
+/*
+================================================================================================================
+Directory styles
+================================================================================================================
+*/
+.staff-member-listing {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.staff-member-listing .personalvCard {
+    width: 16%;
+    padding: 20px 2%;
+    position: relative;
+}
+
+.staff-member-listing .personalvCard img {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    height: 150px;
+}
+
+#currentPage .staff-member-listing .personalvCard ul {
+    margin-left: 0;
+}
+
+.staff-member-listing .personalvCard ul li {
+    list-style: none;
+    margin: 5px 0 5px 0;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.staff-member-listing .personalvCard .title {
+    font-style: italic;
+    line-height: 15px;
+}
+
+.staff-member-listing .personalvCard .name {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.staff-member-listing>*:nth-child(even) {
+    background-color: var(--even-color);
+}
+
+.staff-member-listing>*:nth-child(odd) {
+    background-color: var(--odd-color);
+}
+
+#mainSidebar #sidebar-filter {
+    display: inline;
+    margin-top: 20px;
+    width: 75%;
+}
+
+#mainSidebar .directorySearchIcon {
+    width: 21px;
+    height: 21px;
+    margin-bottom: -5px;
+}
+
+@media (max-width: 1100px) {
+    .staff-member-listing .personalvCard {
+        width: 21%;
+    }
+}
+
+@media (max-width: 960px) {
+    .staff-member-listing .personalvCard {
+        width: 29%;
+    }
+}
+
+@media (max-width: 822px) {
+    .staff-member-listing .personalvCard {
+        width: 46%;
+    }
+}
+
+@media (max-width: 740px) {
+    .staff-member-listing .personalvCard {
+        width: 29%;
+    }
+}
+
+@media (max-width: 484px) {
+    .staff-member-listing .personalvCard {
+        width: 46%;
+    }
 }
 
 
@@ -905,6 +1031,38 @@ form .block {
     margin-bottom: 15px;
 }
 
+/*================================================================================================================
+Table of Contents
+================================================================================================================*/
+.pageTableOfContents {
+    float: right;
+    border: 1px solid #ccc;
+    padding: 1em;
+    list-style-image: none !important;
+    list-style-type: none;
+}
+
+.pageTableOfContents li:before {
+    content: "\25BC";
+    display: inline-block;
+    margin-right: 5px;
+}
+
+a.top {
+    display: block;
+    text-align: right;
+}
+
+a.top::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid black;
+    margin-right: 5px;
+}
 
 
 /*================================================================================================================

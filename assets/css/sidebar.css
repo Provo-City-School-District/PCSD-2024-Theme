@@ -2,6 +2,14 @@
   margin-top: -26px
 }
 
+.rightSidebar a {
+  color: var(--theme-white);
+}
+
+.rightSidebar a:hover {
+  color: var(--link-hover-color);
+}
+
 .rightSidebar.categories p {
   color: var(--theme-black);
 }
@@ -96,6 +104,7 @@
   background-color: var(--theme-white);
   color: var(--main-color);
   border-radius: 5px;
+  margin-bottom: 1em;
 }
 
 .simcal-default-calendar-list ul.simcal-events,
