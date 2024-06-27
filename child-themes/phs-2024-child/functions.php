@@ -13,6 +13,7 @@ function my_theme_variables() {
         'insta_link' => 'instatest',
         'facebook_link' => 'facebooktest',
         'twitter_link' => 'twittertest',
+        'full_calendar_link' => 'http://158.91.1.133:8082/school-calendar/'
         // 'search_icon' => get_template_directory_uri() . '/assets/icons/search-loupe.svg'
     );
     return $my_theme_variables;
