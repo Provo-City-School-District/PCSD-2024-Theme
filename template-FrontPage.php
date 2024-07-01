@@ -97,7 +97,11 @@ $theme_vars = my_theme_variables();
 
 			?>
 		</section>
-		<section><a class="center" href="<?= $theme_vars['full_calendar_link'] ?>">View Full School Calendar</a><?= do_shortcode($theme_vars['front_page_cal']); ?></section>
+		<section>
+			<h2><?php echo $theme_vars['full_school_name']; ?> Calendar</h2>
+			<?= do_shortcode($theme_vars['front_page_cal']); ?>
+			<a class="center" href="<?= $theme_vars['full_calendar_link'] ?>">View Full School Calendar</a>
+		</section>
 	</div>
 	<div id="belowSlider">
 		<section id="stayCurrent" class="grid2 calendar">
