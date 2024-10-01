@@ -12,11 +12,23 @@
 	?>
 	<h2>Follow Us</h2>
 	<ul class="sociallinks">
+		<?php
+		if (isset($theme_vars['insta_link'])) {
+		?>
 		<li><a href="<?php echo $theme_vars['insta_link'] ?>"><?php echo get_svg('socialmedia-insta'); ?></a></li>
-		<!-- <li><a href="<?php //echo $theme_vars['twitter_link'] 
-							?>"><?php //echo get_svg('socialmedia-twitter'); 
-								?></a></li> -->
+		<?php
+		}
+		if (isset($theme_vars['twitter_link'])) {
+		?>
+			<li><a href="<?php echo $theme_vars['twitter_link'] ?>"><?php echo get_svg('socialmedia-twitter'); ?></a></li>
+		<?php
+		}
+		if (isset($theme_vars['facebook_link'])) {
+		?>
 		<li><a href="<?php echo $theme_vars['facebook_link'] ?>"><?php echo get_svg('socialmedia-facebook'); ?></a></li>
+		<?php
+		}
+		?>
 	</ul>
 	<?php
 	//load sidebar calendars
