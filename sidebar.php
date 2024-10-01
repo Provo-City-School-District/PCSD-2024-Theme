@@ -1,5 +1,6 @@
 <aside id="rightSidebar" class="rightSidebar">
 	<?php
+	$theme_vars = my_theme_variables();
 	if (is_page('teachers-staff')) {
 	?>
 		<label for="dsearch" class="hidden" id="directorySearch">Directory Search: </label>
@@ -7,8 +8,7 @@
 		<img class="directorySearchIcon" src="//globalassets.provo.edu/image/icons/search-lt.svg" alt="" />
 	<?php
 	}
-	// gather child theme variables
-	$theme_vars = my_theme_variables();
+
 	?>
 	<h2>Follow Us</h2>
 	<ul class="sociallinks">
