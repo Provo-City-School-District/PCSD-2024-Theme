@@ -288,8 +288,6 @@ Full list of mime types
 https://codex.wordpress.org/Uploading_Files
 https://www.sitepoint.com/mime-types-complete-list/
 */
-
-// allowed upload types
 add_filter('upload_mimes', 'theme_allowed_mime_types');
 function theme_allowed_mime_types($mime_types)
 {
